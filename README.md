@@ -24,7 +24,7 @@ First I navigated to Amazon Lex in the AWS management console and created an emp
 <img src="https://imgur.com/F2K44Ha.png" height="80%" width="80%"/>
 <br />
 <br />
-For the IAM role I chose " Create a role with basic Amazon Lex permissions ". For the "Children’s Online Privacy Protection Act (COPPA) " i selected "No" and i left the rest as default.  <br/>
+For the IAM role I chose " Create a role with basic Amazon Lex permissions ". For the "Children’s Online Privacy Protection Act (COPPA) " i selected "No" and I left the rest as default.  <br/>
 <img src="https://imgur.com/eYd0MyP.png" height="80%" width="80%"/>
 <br />
 <br />
@@ -36,11 +36,11 @@ Now I moved on to the intent section where I gave an intent name and description
 <img src="https://imgur.com/zpd4sDI.png" height="80%" width="80%"/>
 <br />
 <br />
-Now in the Sample utterances I added some inputs that can be asked by the user. I will come back and add some more. I clicked Save Intent and moved to Slot types in the left menu.  <br/>
+Now in the Sample utterances I added some inputs that can be asked by the user. I will come back and add some more. I clicked "Save Intent" and moved to Slot types in the left menu.  <br/>
 <img src="https://imgur.com/yshBVEx.png" height="80%" width="80%"/>
 <br />
 <br />
-In the slots types i added a new blank slot type and named it "language"<br/>
+In the slots types I added a new blank slot type and named it "language"<br/>
 <img src="https://imgur.com/oGGqlp9.png" height="80%" width="80%"/>
 <br />
 <br />
@@ -56,7 +56,7 @@ I then created another slot for text with the slot type set to AMAZON.FreeFormIn
 <img src="https://imgur.com/tQbPyHj.png" width="80%"/>
 <br />
 <br />
-Now i went back to add some more utterances so if the user inputs a type of language they want to translate to it will recognize it. <br/>
+I then went back to add some more utterances so if the user inputs a type of language they want to translate to it will recognise it. <br/>
 <img src="https://imgur.com/dX9Xrtb.png" width="80%"/>
 <br />
 <br />
@@ -73,15 +73,15 @@ I moved down the closing response sections and added a message for the end of a 
 <img src="https://imgur.com/wU4hwDX.png" width="80%"/>
 <br />
 <br />
-Next i navigated to IAM role to create a role for a Lambda function. 
+Next I navigated to IAM role to create a role for a Lambda function. 
 <br/>
 <img src="https://imgur.com/UA7pLaT.png" width="80%"/>
 <br />
-<br />On the next page i added two policies (TranslateFullAccess and AWSLambdaBasicExecutionRole) and in the next step I entered a role name and description then clicked create role. 
+<br />On the next page I added two policies (TranslateFullAccess and AWSLambdaBasicExecutionRole) and in the next step I entered a role name and description then clicked create role. 
 <br/>
 <img src="https://imgur.com/PFxRc9W.png" width="80%"/>
 <br />
-<br />Now I went to the Lambda page to create a function, I gave the function a name and changed the runtime to Python 3.12. I then toggled the default execution role and added my role i made.  
+<br />Now I went to the Lambda page to create a function, I gave the function a name and changed the runtime to Python 3.12. I then toggled the default execution role and added my role I made.  
 <br/>
 <img src="https://imgur.com/Md4c4rq.png" width="80%"/>
 <br />
@@ -94,15 +94,15 @@ Next i navigated to IAM role to create a role for a Lambda function.
 <img src="https://imgur.com/ad4rKh4" width="80%"/>
 <br />
 <br />
-Next I ran a test to make sure that the code is working as intended.  
+Next I ran a test to make sure that the code was working as intended.  
 <br/>
 <img src="https://imgur.com/YsrLGZk.png" width="80%"/>
 <img src="https://imgur.com/Qo5oJUu.png" width="80%"/>
 <br/>
-Next I need to add the lambda function to be used by Lex I clicked on Test on the bot I created and then clicked on the on the settings cog top right of the bot. <br/>
+Next I need to add the lambda function to be used by Lex, I clicked on Test on the bot I created and then clicked on the settings cog at the top right of the bot. <br/>
 <img src="https://imgur.com/IKOol5t.png" width="80%"/>
 <br/>
-Now i tested the bot to make sure everything i have done is working correctly  
+I then tested the bot to make sure everything I had done was working correctly  
 <br/>
 <img src="https://imgur.com/9Zui2za.png" width="80%"/>
 <img src="https://imgur.com/Vb2s7gO.png" width="80%"/>
